@@ -1,0 +1,8 @@
+- name: configure mongodb component
+  become: yes
+  hosts: mongodb
+  roles: # this will automatically load a folder called roles in current working directory.
+  - mongodb
+
+  #NOTE: instead of this yam file we can use main.yaml which is parameterized, 
+         #so that we can avoid the creation of separate yaml file for each component
