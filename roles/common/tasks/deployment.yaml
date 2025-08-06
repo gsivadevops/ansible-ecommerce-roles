@@ -11,8 +11,8 @@
 - name: create /app directory
   ansible.builtin.file:
     state: directory
-  path: /app
-
+  #path: /app #this is syntax error and when we run with include_role in catalogue main.yaml, it will give error after post processing
+  path: /app #this is syntax error and when we run with import_role in catalogue main.yaml, it will give error at pre processing stage
 - name: download application
   ansible.builtin.unarchive:
     src: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ app_version }}.zip"
