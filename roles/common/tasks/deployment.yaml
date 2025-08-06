@@ -11,7 +11,7 @@
 - name: create /app directory
   ansible.builtin.file:
     state: directory
-    path: /app
+  path: /app
 
 - name: download application
   ansible.builtin.unarchive:
@@ -28,4 +28,3 @@
     name: "{{ component }}"
     state: restarted
 
-    
