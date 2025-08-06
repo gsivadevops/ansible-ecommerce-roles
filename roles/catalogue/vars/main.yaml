@@ -1,1 +1,1 @@
-MONGODB_HOST: mongodb.devopslearning.store
+MONGODB_HOST: "mongodb.devopslearning.store"
