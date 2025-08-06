@@ -27,3 +27,5 @@
   ansible.builtin.service:
     name: "{{ component }}"
     state: restarted
+
+    
