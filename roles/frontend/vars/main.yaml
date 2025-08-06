@@ -2,4 +2,4 @@ CATALOGUE_HOST: catalogue.devopslearning.store
 USER_HOST: user.devopslearning.store
 CART_HOST: cart.devopslearning.store
 SHIPPING_HOST: shipping.devopslearning.store
-PAYMENT_HOST: payment.devopslearning.store
+PAYMENT_HOST: "payment.devopslearning.store"
