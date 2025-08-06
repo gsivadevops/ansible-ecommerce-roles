@@ -1,5 +1,5 @@
-CART_HOST: cart.devopslearning.store"
-USER_HOST: "user.devopslearning.store"
-RABBITMQ_HOST: "rabbitmq.devopslearning.store"
-RABBITMQ_USER: "roboshop"
-RABBITMQ_PASSWORD: "roboshop123"
+CART_HOST: cart.devopslearning.store
+USER_HOST: user.devopslearning.store
+RABBITMQ_HOST: rabbitmq.devopslearning.store
+RABBITMQ_USER: roboshop
+RABBITMQ_PASSWORD: roboshop123
