@@ -1,4 +1,7 @@
 - name: stop the service
+  # tags: 
+  # - deployment # if we set include_role, then we can add tags here to execute this deployment. 
+                 # like this we need to add for all the below tasks to excecute all
   ansible.builtin.service:
     name: "{{ component }}"
     state: stopped
@@ -12,7 +15,8 @@
   ansible.builtin.file:
     state: directory
   #path: /app #this is syntax error and when we run with include_role in catalogue main.yaml, it will give error after post processing
-  path: /app #this is syntax error and when we run with import_role in catalogue main.yaml, it will give error at pre processing stage
+  #path: /app #this is syntax error and when we run with import_role in catalogue main.yaml, it will give error at pre processing stage
+    path: /app
 - name: download application
   ansible.builtin.unarchive:
     src: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ app_version }}.zip"
