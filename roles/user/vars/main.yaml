@@ -1,2 +1,5 @@
-REDIS_HOST: redis.devopslearning.store
-MONGODB_HOST: mongodb.devopslearning.store
+# REDIS_HOST: redis.devopslearning.store
+# MONGODB_HOST: mongodb.devopslearning.store
+
+REDIS_HOST: redis-{{ env}}.devopslearning.store
+MONGODB_HOST: mongodb-{{ env}}.devopslearning.store

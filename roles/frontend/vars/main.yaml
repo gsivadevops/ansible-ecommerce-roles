@@ -1,5 +1,11 @@
-CATALOGUE_HOST: catalogue.devopslearning.store
-USER_HOST: user.devopslearning.store
-CART_HOST: cart.devopslearning.store
-SHIPPING_HOST: shipping.devopslearning.store
-PAYMENT_HOST: payment.devopslearning.store
+# CATALOGUE_HOST: catalogue.devopslearning.store
+# USER_HOST: user.devopslearning.store
+# CART_HOST: cart.devopslearning.store
+# SHIPPING_HOST: shipping.devopslearning.store
+# PAYMENT_HOST: payment.devopslearning.store
+
+CATALOGUE_HOST: catalogue.backend-{{ env }}.devopslearning.store
+USER_HOST: user.backend-{{ env }}.devopslearning.store
+CART_HOST: cart.backend-{{ env }}.devopslearning.store
+SHIPPING_HOST: shipping.backend-{{ env }}.devopslearning.store
+PAYMENT_HOST: payment.backend-{{ env }}.devopslearning.store

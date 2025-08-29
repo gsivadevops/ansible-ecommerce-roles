@@ -1,1 +1,4 @@
+# MONGODB_HOST: "mongodb.devopslearning.store"
+
+#for terraform
 MONGODB_HOST: "mongodb-{{ env }}.devopslearning.store"
