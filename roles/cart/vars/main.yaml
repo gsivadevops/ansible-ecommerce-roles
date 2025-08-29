@@ -1,6 +1,7 @@
 # CATALOGUE_HOST: catalogue.devopslearning.store
 # REDIS_HOST: redis.devopslearning.store
 
+
 # for trraform
 CATALOGUE_HOST: catalogue.backend-{{ env }}.devopslearning.store
 REDIS_HOST: redis-{{ env }}.devopslearning.store
